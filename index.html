@@ -353,7 +353,7 @@
             <div class="footer-address">
                 <a href="./index.html " class="footer-logo  "><span class="logo-accent ">Web</span>Studio</a>
                 <address class="address">
-            <ul class="address-list list">
+            <ul class="address-list">
               <li class="address-item">
                 <a
                   class="address-link "
@@ -408,17 +408,68 @@
                     </li>
                 </ul>
             </div>
+            <div class="mail-submit">
+                <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
+                <form action class="form-mail">
+                    <input type="mail" name="E-mail" placeholder="E-mail" class="mail-form">
+                    <button type="submit" class="button-submit">Подписаться
+                                <svg class="button-img">
+                                    <use href="./images/iconsend.svg#send"></use>
+                                </svg>
+                            </button>
+                </form>
+            </div>
         </div>
     </footer>
     <!--Модельное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="model-close" data-modal-close>
-         X
+         x
       </button>
+            <h3 class="window-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <form action="" class="form-window">
+                <label for="form-input" class="form-input">Имя</label>
+                <div class="form-name">
+                    <input type="text" id="name_input" class="form-style" name="name">
+                    <svg width="12" height="12">
+                    <use href="./images/name.svg#name"></use>
+                    </svg>
+                </div>
+                </label>
+                <label for="form-input" class="form-input">Телефон</label>
+                <div class="form-name">
+                    <input type="tel" id="tel" class="form-style" name="phone">
+                    <svg width="13" height="13">
+                        <use href="./images/contactphone.svg#contactphone"></use>
+                    </svg>
+                </div>
+                </label>
+                <label for="form-input" class="form-input">Почта</label>
+                <div class="form-name">
+                    <input type="mail" id="mail" class="form-style" name="mail">
+                    <svg width="15" height="12">
+                        <use href="./images/mail.svg#mail"></use>
+                    </svg>
+                </div>
+                </label>
+                <label for="form-input" class="form-input">Комментарий</label>
+                <div>
+                    <textarea name="comment" placeholder="Введите текст" class="comment"></textarea>
+                </div>
+                <div class="agreement">
+                    <input type="checkbox" id="checkbox_inp" name="agreement" class="agreement-hidden check">
+                    <label class="agreement-label" for="checkbox_inp">Соглашаюсь с рассылкой и принимаю
+                    <a href="" class="agreement-link">Условия договора</a>
+                </label>
+                </div>
+                <button class="form-button-window">Отправить</button>
+            </form>
         </div>
+
     </div>
     <script src="./modal.js"></script>
 </body>
+
 
 </html>
